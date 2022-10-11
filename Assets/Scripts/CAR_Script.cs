@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class CAR_Script : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int Wheels = 4; //amount of wheels the vehicle has 
+    [SerializeField] private string Name = "motobike";
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        Debug.Log(string.Format("The {0} has {1} Wheels", Name, Wheels));
     }
 }
