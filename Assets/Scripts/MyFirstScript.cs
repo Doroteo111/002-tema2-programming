@@ -14,6 +14,10 @@ public class MyFirstScript : MonoBehaviour
 
     public string message = "¡Hola Mundo!";
     public int points = 256;
+
+    public float x = 2; //math operation
+    public float y = 3;
+ 
     private void Start()
     {
         Debug.Log(message);
@@ -22,5 +26,12 @@ public class MyFirstScript : MonoBehaviour
         Debug.Log(string.Format("Tengo {0} puntos", points)); 
         
         Debug.Log(string.Format("Hola {0}, tienes {1} puntos", playerName, points));
+
+        x = x + y;
+        Debug.Log(x);
     }
+
+   
+    
+  
 }
