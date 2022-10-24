@@ -230,13 +230,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115634621}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009eba3e6a46507408de2253b9bc6cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Wheels: 4
   Name: car
+  isOn: 1
+  Sound: Brum brum
 --- !u!1 &500094468
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,13 +347,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500094468}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009eba3e6a46507408de2253b9bc6cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Wheels: 6
   Name: bus
+  isOn: 1
+  Sound: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -753,7 +757,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179578071}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 724ddee958a404249ba2798240bc6da8, type: 3}
   m_Name: 
@@ -1092,6 +1096,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 12
   y: 4
+  isRaining: 0
+  number: 0
 --- !u!65 &1659405738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1374,13 +1380,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836180705}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009eba3e6a46507408de2253b9bc6cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Wheels: 2
   Name: motobike
+  isOn: 0
+  Sound: 
 --- !u!1 &1955954296
 GameObject:
   m_ObjectHideFlags: 0
