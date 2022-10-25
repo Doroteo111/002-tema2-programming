@@ -8,34 +8,52 @@ public class CAR_Script : MonoBehaviour
     [SerializeField] private string Name = "motobike";
 
 
-    [SerializeField] private bool isOn;
+    [SerializeField] private bool isOn; //motor
 
     public string Sound;
 
+    [SerializeField] private float gasoline;
+
+
     private void Start()
     {
-        Debug.Log(string.Format("The {0} has {1} Wheels", Name, Wheels));
+        /* Debug.Log(string.Format("The {0} has {1} Wheels", Name, Wheels));
 
-       /* if (isOn == true) //encendido o no
-            Debug.Log($"El {Name} esta encendido");
+         if (isOn == true)                                   //encendido o no
+             Debug.Log($"El {Name} esta encendido");
 
-        else
-            Debug.Log($"El {Name} esta apagado"); */
+         else
+             Debug.Log($"El {Name} esta apagado"); */
 
-        if (isOn == false)
+        /* if (isOn == false)                              //operation decision
+         {
+             Debug.Log($"El {Name} esta apagado");
+         }
+
+
+         else if (Sound != "")
+         {
+             Debug.Log($"El {Name} esta encendido y hace {Sound}");
+         }
+
+         else
+         {
+             Debug.Log($"El {Name} esta en marcha"); */
+
+        /* if (isOn == true) {
+             Debug.Log($"El {Name} esta encendido");
+
+             if (gasoline <= 10)
+             {
+                 Debug.Log($"¡A {Name} le queda poca gasolina!");
+             }
+
+
+         }  */
+
+        if (isOn == true && gasoline <= 10)
         {
-            Debug.Log($"El {Name} esta apagado");
-        }
-
-
-        else if (Sound != "")
-        {
-            Debug.Log($"El {Name} esta encendido y hace {Sound}");
-        }
-           
-        else
-        {
-            Debug.Log($"El {Name} esta en marcha");
+            Debug.Log($"¡A {Name} le queda poca gasolina!");
         }
 
 
@@ -45,4 +63,4 @@ public class CAR_Script : MonoBehaviour
 
 
     }
-}                                                                                    
+}                                                                                 

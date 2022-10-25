@@ -230,7 +230,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115634621}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009eba3e6a46507408de2253b9bc6cb8, type: 3}
   m_Name: 
@@ -239,6 +239,7 @@ MonoBehaviour:
   Name: car
   isOn: 1
   Sound: Brum brum
+  gasoline: 8.25
 --- !u!1 &500094468
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500094468}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009eba3e6a46507408de2253b9bc6cb8, type: 3}
   m_Name: 
@@ -356,6 +357,7 @@ MonoBehaviour:
   Name: bus
   isOn: 1
   Sound: 
+  gasoline: 49.75
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,19 +973,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428138675}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fc94cb945abc8642b0d6ed1463c05bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAge: 33
-  playerSpeed: 3.125
-  playerName: Isa De
-  gameOver: 0
-  message: Estos son tus puntos en total :-))
-  points: 256
-  x: 5
-  y: 4
+  InitialPos: {x: 1, y: 1, z: 1}
 --- !u!65 &1428138677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1380,15 +1375,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836180705}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009eba3e6a46507408de2253b9bc6cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Wheels: 2
   Name: motobike
-  isOn: 0
+  isOn: 1
   Sound: 
+  gasoline: 33.9
 --- !u!1 &1955954296
 GameObject:
   m_ObjectHideFlags: 0
