@@ -20,6 +20,9 @@ public class MyFirstScript : MonoBehaviour
    */
 
     public Vector3 InitialPos = new Vector3(1, 1, 1);
+    public Vector3 up = new Vector3(0, 1, 0);
+    public Vector3 down = new Vector3(0, -1, 0);
+
     private void Start()
     {
         /* Debug.Log(message);
@@ -35,9 +38,21 @@ public class MyFirstScript : MonoBehaviour
         transform.position = InitialPos;
 
     }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+         {
+            transform.position += up;
+         
+        }
+        if (Input.GetMouseButtonDown(1))
+        {
+            transform.position += down;
+        }
+    }
 
-   
 
-    
-  
+
+
+
 }

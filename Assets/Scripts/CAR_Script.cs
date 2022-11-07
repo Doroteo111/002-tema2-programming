@@ -14,6 +14,8 @@ public class CAR_Script : MonoBehaviour
 
     [SerializeField] private float gasoline;
 
+    public bool canGetBigger;
+    public Vector3 localScale = new Vector3(1, 1, 1);
 
     private void Start()
     {
@@ -51,16 +53,30 @@ public class CAR_Script : MonoBehaviour
 
          }  */
 
-        if (isOn == true && gasoline <= 10)
+       /* if (isOn == true && gasoline <= 10)
         {
             Debug.Log($"¡A {Name} le queda poca gasolina!");
         }
+       */
 
+    }
 
+    private void Update()
+    {
+        if (canGetBigger == false)
+        {
+            if(Input.GetMouseButtonDown(0))
+                {
+                transform.localScale += Vector3.one;
+            }
+            
+            
+               if (Input.GetMouseButtonDown(1))
+                {
+                    transform.localScale -= Vector3.one;
 
-
-
-
-
+                }
+            
+        }
     }
 }                                                                                 

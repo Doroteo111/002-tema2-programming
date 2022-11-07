@@ -10,9 +10,13 @@ public class Operation : MonoBehaviour
     public bool isRaining;
 
     public int number;
+
+    
+
     private void Start()
     {
-        Debug.Log(x + y);
+        
+        /*Debug.Log(x + y);
         Debug.Log(x - y);
         Debug.Log(x * y);
         Debug.Log(x / y);
@@ -24,10 +28,22 @@ public class Operation : MonoBehaviour
         else Debug.Log("No esta lloviendo, puedes dejar el paraguas");
 
         if (number > 0)
-            Debug.Log($"El número {number} es positivo");
-
-
-
+            Debug.Log($"El número {number} es positivo"); */
 
     }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Calculator(7, 4);
+        }
+    }
+    private void Calculator(float x, float y)
+    {
+        Debug.Log($"Sum:{x} + {y} = {x + y}");
+        Debug.Log($"Subtraction:{x} - {y} = {x - y}");
+        Debug.Log($"Product:{x} * {y} = {x * y}");
+        Debug.Log($"Division:{x} / {y} = {x / y}");
+    }
+
 }
